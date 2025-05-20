@@ -12,9 +12,8 @@ int main () {
 
    printf("Bem vindo ao Super Trunfo Países\n");
    printf("        MENU PRINCIPAL\n");
-      printf("1. Jogadorr vs Jogador\n");
-      printf("2. Jogador vs Computador\n");
-      printf("3. Regras\n");
+      printf("1. Jogador vs Jogador\n");
+      printf("2. Regras\n");
 
     printf("Qual a opção que deseja?\n");
     scanf("%d", &opcao1);
@@ -71,7 +70,7 @@ int main () {
     // Menu de comparacao da cartas
     printf("\nEscolha o atributo da carta que deseja comparar \n");
     printf("4. População\n");
-    printf("4. Área\n");
+    printf("5. Área\n");
     printf("6. PIB\n");
     printf("7. Número de pontos turístico\n");
     printf("8. Densida Populacional\n"); // Densidade = populacao / area
@@ -160,6 +159,8 @@ int main () {
             printf("%s: Cidade de %s do estado de/o %s tem %d pontos turístico\n\n", codigo1, cidade1, estado1, NPT1);
             printf("%s: Cidade de %s do estado de/o %s tem %d pontos turístico\n", codigo2, cidade2, estado2, NPT2);
         }
+
+        break;
     case 8:
         if (DP1 < DP2) // Comparando densidade populacional
         {
@@ -177,6 +178,8 @@ int main () {
             printf("%s: Cidade de %s do estado de/o %s tem uma densidade demográfica de %.2f hab./km²\n\n", codigo1, cidade1, estado1, DP1);
             printf("%s: Cidade de %s do estado de/o %s tem uma densidade demográfica de %.2f hab./km²\n", codigo2, cidade2, estado2, DP2);
         }
+
+        break;
     case 9:
         if (PIBpC1 > PIBpC2) // Comparando PIB per capta 
         {
@@ -194,6 +197,8 @@ int main () {
             printf("%s: Cidade de %s do estado de/o %s tem um PIB per capta de %.2f\n\n", codigo1, cidade1, estado1, PIBpC1);
             printf("%s: Cidade de %s do estado de/o %s tem um PIB per capta de %.2f\n", codigo2, cidade2, estado2, PIBpC2);
         }
+
+        break;
     case 10:
         if (SP1 > SP2) // Comparando o Super Poder 
         {  
@@ -262,50 +267,23 @@ int main () {
         }
         
         break;
-        
+       
     
     default:
-       printf("Opção invalida");
+       printf("Opção invalida\n");
         break;
     }
-
-    
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+     
     
     break;
-   
+   case 2:
+       printf("Este e o desafio super trunfo!\n");
+       printf("Introduza as informacoes das cartas, e compare com seus amigos!\n");
+       printf("A comparação funciona da seguinte maneira:\n");\
+       printf("O sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.\n");
+
    default:
-   printf("Opção invalida");
+   printf("Opção invalida\n");
     break;
    }
 
